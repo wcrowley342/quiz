@@ -1,0 +1,7 @@
+import { NextResponse } from 'next/server';
+// TODO: connect Supabase & HubSpot
+export async function POST(req: Request) {
+  const body = await req.json();
+  console.log('Quiz submission', body);
+  return NextResponse.json({ ok: true });
+}
